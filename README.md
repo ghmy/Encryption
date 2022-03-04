@@ -1,5 +1,5 @@
 # Encryption
-Hybrid Encryption with Randomized rsa key, salt, IV and memory stream bytes placement
+Hybrid Encryption with Randomized rsa key, salt, IV and memory stream bytes placement.
 AES is used for encryption. AES key is encrypted via RSA. 
 Normally we would start with encrypted RSA key and append salt to it, then append IV to it and append final memory stream to it. 
 But this time I randomized this append procedure. Let's suppose RSA key is 8 bytes, salt is 5 bytes, IV is 3 bytes and memory stream is 4 bytes. 
